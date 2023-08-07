@@ -1,0 +1,70 @@
+# Python virtual environments
+.env
+env/
+venv/
+__pycache__/
+
+# Conda environment files
+environment.yml
+environment.yaml
+
+# Jupyter notebook checkpoints and hidden files
+.ipynb_checkpoints/
+.nbgrader.log
+.ipynb_checkpoints/.ipynb_checkpoints/
+
+# Compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+*.exe
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+
+# Editor-specific files
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Compiled LaTeX files and PDFs
+*.pdf
+*.dvi
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.xdv
+*.nav
+*.snm
+*.vrb
+*.toc
+*.lof
+*.lot
+*.brf
+*.bcf
+*.run.xml
+
+# Generated HTML, Markdown, and LaTeX files
+*.html
+*.md
+*.tex
