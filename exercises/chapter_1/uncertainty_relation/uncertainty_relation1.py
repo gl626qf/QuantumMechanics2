@@ -1,6 +1,6 @@
 import qutip
 import numpy as np
-import unittest
+
 
 def calculate_dispersion(operator, state):
     # Convert operator and state to numpy arrays

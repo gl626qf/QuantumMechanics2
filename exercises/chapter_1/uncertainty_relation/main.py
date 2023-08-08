@@ -1,5 +1,5 @@
 from spin_simulation import simulate_spin_measurement, plot_spin_expectations
-from inequality import calculate_inequality
+import uncertainty_relation1
 import numpy as np
 import qutip
 import matplotlib.pyplot as plt
@@ -43,17 +43,13 @@ if __name__ == "__main__":
     #     print("Inequality is not satisfied.")
 
 
-
     # Define the spin-up state along the x-direction
     spin_up_x = qutip.basis(2, 0)  # |+x⟩
 
-    # Check the inequality for A = σ_z and B = σ_y
-    inequality_satisfied = calculate_inequality(sz, sy, spin_up_x)
+    # Define the spin-up state along the z-direction
+    spin_up_z = qutip.basis(2, 0)  # |+z⟩
 
-
-    if inequality_satisfied:
-        print("Inequality is satisfied.")
-    else:
-        print("Inequality is not satisfied.")
-    
-    unittest.main()
+    # Calculate and check the inequality for different combinations of operators and states
+    print("Inequality for sx and sy:", uncertainty_relation1.calculate_inequality(sx, sy, spin_up_x))
+    print("Inequality for sz and sy:", uncertainty_relation1.calculate_inequality(sz, sy, spin_up_x))
+    print("Inequality for sx and sz:", uncertainty_relation1.calculate_inequality(sx, sz, spin_up_z))

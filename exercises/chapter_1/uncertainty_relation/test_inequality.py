@@ -1,6 +1,6 @@
 import qutip
 import unittest
-from inequality import calculate_inequality
+from uncertainty_relation1 import calculate_inequality
 
 class TestInequality(unittest.TestCase):
     def setUp(self):
