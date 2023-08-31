@@ -1,0 +1,17 @@
+Plan: 
+- read
+- 
+
+
+Diagonalization: 
+
+
+chapter 1.6
+- Continous spectra 
+- Infinite dimensions in ketspace for momentum
+
+chap 1.4
+- Filtering process, said on page 38
+
+what does the state ket mean in continous 
+- Infinite dimensions

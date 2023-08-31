@@ -6,6 +6,10 @@ import concepts.wavefunctions as wavefunctions
 import visualizations.plot_utils as plot_utils
 import operators.linear_algebra_operators as la_ops
 import operators.random_operators as rand_ops
+# import concepts.basis_transformation as basis_transformation
+# import concepts.unitary_transformation as unitary_transformation
+import concepts.plotting_script as plotting_script
+import concepts.eigen_value as eigen_value
 
 
 def main():
@@ -30,8 +34,20 @@ def main():
     random_matrix_2 = rand_ops.random_hermitian_operator(3)
     tr1 = la_ops.operator_trace(random_matrix_1 * random_matrix_2)
     tr2 = la_ops.operator_trace(random_matrix_2 * random_matrix_1)
-    print(tr1 == tr2)
 
+
+
+
+    # Basis transformation
+    # basis_transformation
+
+
+
+    # unitary_transformation
+    # plotting_script
+
+    # Problem 1.16
+    eigen_value
 
 
 
