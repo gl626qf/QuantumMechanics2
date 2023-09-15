@@ -1,0 +1,21 @@
+# contour_plot.gpi
+
+# Set output file format and name (e.g., PNG)
+set terminal pngcairo size 800, 600 enhanced font 'Verdana,10'
+set output 'contour_plot.png'
+
+# Set contour plotting options
+set contour base
+set cntrparam levels 10
+set view map
+
+# Set labels and title
+set xlabel 'X'
+set ylabel 'Y'
+set title 'Contour Plot'
+
+# Full path to the data.dat file
+datafile = 'Output/data.dat'
+
+# Plot the data
+splot datafile matrix with lines
